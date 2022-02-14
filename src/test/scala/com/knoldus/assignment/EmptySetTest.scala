@@ -2,7 +2,7 @@ package com.knoldus.assignment
 
 import org.scalatest.flatspec.AnyFlatSpec
 
-class SetTest extends AnyFlatSpec {
+class EmptySetTest extends AnyFlatSpec {
   val emptySetObject = new EmptySet[Number]
   val one: Number = Number(1)
   val zero: Number = Number(0)
@@ -21,8 +21,4 @@ class SetTest extends AnyFlatSpec {
     assert(emptySet.contains(zero))
     assert(!emptySet.contains(ten))
   }
-  "condition" should "check weather non empty set has value 5 " in {
-    assert(nonEmptySetObject.contains(five))
-  }
-
 }
